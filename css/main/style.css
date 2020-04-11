@@ -1,20 +1,89 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Itim', cursive;
 }
+
+/* header section*/
 .header-section{
-    background-color: rgb(5, 58, 58);
+    background-color: white;
     margin-top: -21px;
+    border-bottom: 1px solid coral;
 }
 .heading{
     text-align: center;
-    color: white;
+    color: coral;
     padding-top: 20px;
+    font-family: 'Cookie', cursive
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.searchbar{
+    margin-left: 5px;
+    height: 25px;
+    margin-top: 12px;
+    border: 1px solid rgb(255, 96, 38);
+    outline: none;
+    border-radius: 2px;
+    width: 100px;
+}
+.searchbar:focus{
+    box-shadow: 4px 4px 10px 0.4px rgb(134, 86, 68);
+}
+.navbar input::placeholder{
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 0 0 0 5px;
 }
 li{
     display: inline;
+    margin-right: 10px;
+    color: rgb(240, 137, 100);
+}
+.social-icon-container{
+    margin: auto;
+}
+.social-icon-container img{
+    max-width: 30px;
+    margin: 10px;
+}
+
+/* Header image section */
+.header-image-section{
+    height: 300px;
+    background-image: url(/images/semi-opened-laptop-computer-turned-on-on-table-2047905.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+
+
+/* styles for medium sized screens */
+@media(min-width:500px) and (max-width:900px){
+    .navbar{
+        width: 90vw;
+        margin: auto;
+    }
+    .searchbar{
+        width: 170px;
+    }
+}
+
+/* styles for large screens */
+@media(min-width:900px){
+    .social-icon-container{
+        margin: 0;
+    }
+    .searchbar{
+        width: 170px;
+    }
+    .header-image-section{
+        height: 450px;
+        background-position: top;
+    }
 }
