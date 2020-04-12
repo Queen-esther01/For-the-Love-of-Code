@@ -63,6 +63,23 @@ li{
     text-align: center;
 }
 
+/* Blog card section */
+.blog-card-section{
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+    grid-gap: 10px;
+    text-align: center;
+    width: 90vw;
+    margin: auto;
+    margin-top: 15px;
+    
+}
+.blog-card-container{
+    border: 1px solid orange;
+}
+.blog-card-image{
+    width: 100%;
+}
 
 
 /* styles for medium sized screens */
