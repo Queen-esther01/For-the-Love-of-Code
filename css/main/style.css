@@ -30,9 +30,11 @@ body{
     outline: none;
     border-radius: 2px;
     width: 100px;
+    transition: transform 600ms;
 }
 .searchbar:focus{
-    box-shadow: 4px 4px 10px 0.4px rgb(134, 86, 68);
+    box-shadow: 4px 4px 15px 0.4px rgb(230, 226, 225);
+    transform: scale(1.1);
 }
 .navbar input::placeholder{
     font-style: italic;
