@@ -29,7 +29,7 @@ body{
     border: 1px solid rgb(255, 96, 38);
     outline: none;
     border-radius: 2px;
-    width: 100px;
+    width: 170px;
     transition: transform 600ms;
 }
 .searchbar:focus{
@@ -70,13 +70,16 @@ li{
     grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
     grid-gap: 10px;
     text-align: center;
-    width: 90vw;
+    width: 95vw;
     margin: auto;
     margin-top: 15px;
     
 }
 .blog-card-container{
     border: 1px solid orange;
+}
+.blog-card-container:hover{
+    box-shadow: 4px 4px 15px 10px rgba(221, 152, 152, 0.246);
 }
 .blog-card-image{
     width: 100%;
@@ -97,15 +100,85 @@ li{
     color: orangered;
     transform: scale(1.1);
 }
+.blog-card-text{
+    font-size: 0.8em;
+}
+
+
+/* Subscription form section */
+.subscription-form-section{
+    display: flex;
+    /* grid-template: repeat(2/1fr)/repeat(2/1fr); */
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 15px;
+}
+.subscription-form-container{
+    padding: 10px;
+}
+.subscription-heading{
+    margin-top: 50px;
+}
+.subscribe-form-input{
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid orangered;
+    transition: transform 600ms;
+}
+.subscribe-form-input::placeholder{
+    color: rgba(128, 128, 128, 0.65);
+}
+.subscribe-form-input:focus{
+    border-bottom: 2px solid orangered;
+    transform: scale(1.03);
+}
+.subscribe-button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid orangered;
+    color: orange;
+    transition: transform 600ms;
+}
+.subscribe-button:hover{
+    background-color: orangered;
+    color: white;
+    transform: scale(1.03);
+}
+
+
+/* footer Section */
+.footer-section{
+    text-align: center;
+    background-color: orangered;
+    padding: 1px;
+}
+.footer-text{
+    color: white;
+}
 
 /* styles for medium sized screens */
-@media(min-width:500px) and (max-width:900px){
+@media(min-width:600px) and (max-width:900px){
     .navbar{
         width: 90vw;
         margin: auto;
     }
-    .searchbar{
+    /* .searchbar{
         width: 170px;
+    } */
+    .blog-card-text{
+        font-size: 1em;
+    }
+    .subscription-form-section{
+        justify-content: space-around;
+    }
+    .subscribe-form-input{
+        width: 300px;
     }
 }
 
@@ -114,14 +187,23 @@ li{
     .social-icon-container{
         margin: 0;
     }
-    .searchbar{
+    /* .searchbar{
         width: 170px;
-    }
+    } */
     .header-image-section{
         height: 450px;
         background-position: top;
     }
     .blog-card-section{
-        grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(20%,1fr));
+    }
+    .blog-card-text{
+        font-size: 1em;
+    }
+    .subscription-form-section{
+        justify-content: space-around;
+    }
+    .subscribe-form-input{
+        width: 500px;
     }
 }
