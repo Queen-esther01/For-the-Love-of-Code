@@ -7,30 +7,31 @@
 
 /* Author Section */
 .author-section{
-    display: grid;
-    grid-template-columns: repeat(4/1fr);
-    grid-template-areas: 
-        "image image info info";
+    display: flex;
+    justify-content: space-evenly;
 }
 .author-image-container{
-    width: 50%;
+    width: 50vw;
     border: 1px solid red;
-    grid-area: image;
-}
-.author-image{
-    width: 50%;
-    padding: 0;
     
 }
+.author-image{
+    width: 100%;
+    padding: 0;
+    border-radius: 50%;
+}
 .author-info-container{
-    width: 50%;
+    width: 50vw;
     border: 1px solid red;
-    grid-area: info;
 }
 .author-info{
     font-size: 0.8em;
-    
+    margin: 20px 0 0 10px;
 }
+
+/* Blog Post image container */
+
+
 
 /* Post Section */
 .post-section{
@@ -54,13 +55,27 @@
 
 /* For medium sized screens */
 @media(min-width: 600px) and (max-width: 900px){
-
+    .author-image{
+        border-radius: 0;
+    }
 }
 
 /* For Large Screens */
-@media(max-width: 900px){
-    /* .post-section{
-        grid-template-areas: 
-            "article article aside aside aside";
-    } */
+@media(min-width: 900px){
+    .author-image-container{
+        /* height: 100%; */
+        width: 30vw;
+    }
+    .author-info-container{
+        /* height: 100%; */
+        width: 70vw;
+    }
+    .author-image{
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+    .blog-post-image-container{
+        height: 400px;
+    }
 }
