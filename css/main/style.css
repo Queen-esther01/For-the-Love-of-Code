@@ -1,5 +1,6 @@
-@import url(/css/main/card.css);
-@import url(/css/main/form.css);
+@import url(../../css/main/card.css);
+@import url(../../css/main/form.css);
+
 
 body{
     margin: 0;
@@ -44,7 +45,7 @@ body{
     font-size: 0.8em;
     padding: 0 0 0 5px;
 }
-li{
+.nav-links{
     display: inline;
     margin-right: 10px;
     color: rgb(240, 137, 100);
@@ -61,7 +62,7 @@ li{
 .header-image-section,
 .blog-post-image-container{
     height: 300px;
-    background-image: url(/images/semi-opened-laptop-computer-turned-on-on-table-2047905.jpg);
+    background-image: url(../../images/semi-opened-laptop-computer-turned-on-on-table-2047905.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
