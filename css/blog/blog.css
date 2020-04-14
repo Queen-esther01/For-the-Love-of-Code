@@ -3,6 +3,7 @@
     text-align: center;
     padding-top: 30px;
     color: rgb(128, 72, 72);
+    font-family: "Berkshire Swash", cursive;
 }
 
 /* Author Section */
@@ -67,20 +68,23 @@
     .author-info-container{
         width: 80vw;
     }
+    .author-info{
+        font-size: 1em;
+    }
 }
 
 /* For Large Screens */
 @media(min-width: 900px){
     .author-image-container{
         /* height: 100%; */
-        width: 30vw;
+        width: 22vw;
     }
     .author-info-container{
         /* height: 100%; */
         width: 70vw;
     }
     .author-info{
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .author-image{
         width: 100%;
@@ -92,6 +96,12 @@
     }
     .post-section{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+    }
+    .post-container{
+        width: 60vw;
+    }
+    .aside-container{
+        width: 30vw;
     }
 }

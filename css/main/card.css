@@ -19,6 +19,9 @@
 .blog-card-image{
     width: 100%;
 }
+.blog-card-heading{
+    font-family: "Berkshire Swash", cursive;
+}
 .blog-card-button{
     border: none;
     outline: none;
@@ -29,6 +32,8 @@
     color: white;
     transition: transform 600ms;
     text-decoration: none;
+    font-family: "Baloo Paaji 2", cursive;
+}
 }
 .blog-card-button:hover{
     background-color: white;
