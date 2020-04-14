@@ -33,7 +33,7 @@ body{
     border: 1px solid rgb(255, 96, 38);
     outline: none;
     border-radius: 2px;
-    width: 170px;
+    width: 130px;
     transition: transform 600ms;
 }
 .searchbar:focus{
@@ -87,9 +87,9 @@ body{
         width: 90vw;
         margin: auto;
     }
-    /* .searchbar{
+    .searchbar{
         width: 170px;
-    } */
+    }
     .blog-card-text{
         font-size: 1em;
     }
@@ -106,9 +106,9 @@ body{
     .social-icon-container{
         margin: 0;
     }
-    /* .searchbar{
+    .searchbar{
         width: 170px;
-    } */
+    }
     .header-image-section{
         height: 450px;
         background-position: top;
