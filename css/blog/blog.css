@@ -26,7 +26,7 @@
 }
 .author-info{
     font-size: 0.8em;
-    margin: 20px 0 0 10px;
+    margin: 15px 0 0 10px;
 }
 
 /* Blog Post image container */
@@ -37,10 +37,11 @@
 .post-section{
     width: 90vw;
     margin: auto;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(5/1fr);
     grid-template-areas: 
-        "article article article aside aside";
+        "article article article aside aside"; */
+    
 }
 .post-container{
     grid-area: article;
@@ -50,6 +51,8 @@
 }
 .aside-container{
     grid-area: aside;
+    width: 80vw;
+    margin: auto;
 }
 
 
@@ -77,7 +80,7 @@
         width: 70vw;
     }
     .author-info{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .author-image{
         width: 100%;
@@ -87,5 +90,8 @@
     .blog-post-image-container{
         height: 400px;
     }
-    
+    .post-section{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }

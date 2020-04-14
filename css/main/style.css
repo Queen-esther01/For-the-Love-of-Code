@@ -1,3 +1,6 @@
+@import url(/css/main/card.css);
+@import url(/css/main/form.css);
+
 body{
     margin: 0;
     padding: 0;
@@ -64,99 +67,10 @@ li{
     text-align: center;
 }
 
-/* Blog card section */
-.blog-card-section{
-    display: grid;
-    /* grid-template: repeat(2,1fr)/repeat(2,1fr); */
-    grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
-    grid-gap: 10px;
-    text-align: center;
-    width: 95vw;
-    margin: auto;
-    margin-top: 15px;
-    
-}
-.blog-card-container{
-    border: 1px solid orange;
-}
-.blog-card-container:hover{
-    box-shadow: 4px 4px 15px 10px rgba(221, 152, 152, 0.246);
-}
-.blog-card-image{
-    width: 100%;
-}
-.blog-card-button{
-    border: none;
-    outline: none;
-    width: 50%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: orangered;
-    color: white;
-    transition: transform 600ms;
-    text-decoration: none;
-}
-.blog-card-button:hover{
-    background-color: white;
-    border: 1px solid orangered;
-    color: orangered;
-    transform: scale(1.1);
-}
-.blog-button-link{
-    text-decoration: none;
-    color: white;
-    background-color: orangered;
-}
-.blog-card-text{
-    font-size: 0.8em;
-}
 
 
-/* Subscription form section */
-.subscription-form-section{
-    display: flex;
-    /* grid-template: repeat(2/1fr)/repeat(2/1fr); */
-    justify-content: space-evenly;
-    margin: auto;
-    padding: 15px;
-}
-.subscription-form-container{
-    padding: 10px;
-}
-.subscription-heading{
-    margin-top: 50px;
-}
-.subscribe-form-input{
-    margin: 5px;
-    padding: 5px;
-    outline: none;
-    border: none;
-    background: transparent;
-    border-bottom: 1px solid orangered;
-    transition: transform 600ms;
-}
-.subscribe-form-input::placeholder{
-    color: rgba(128, 128, 128, 0.65);
-}
-.subscribe-form-input:focus{
-    border-bottom: 2px solid orangered;
-    transform: scale(1.03);
-}
-.subscribe-button{
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid orangered;
-    color: orange;
-    transition: transform 600ms;
-}
-.subscribe-button:hover{
-    background-color: orangered;
-    color: white;
-    transform: scale(1.03);
-}
+
+
 
 
 /* footer Section */
