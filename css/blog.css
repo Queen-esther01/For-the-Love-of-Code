@@ -58,6 +58,12 @@
     .author-image{
         border-radius: 0;
     }
+    .author-image-container{
+        width: 50vw;
+    }
+    .author-info-container{
+        width: 80vw;
+    }
 }
 
 /* For Large Screens */
@@ -70,6 +76,9 @@
         /* height: 100%; */
         width: 70vw;
     }
+    .author-info{
+        font-size: 1.5em;
+    }
     .author-image{
         width: 100%;
         padding: 0;
@@ -78,4 +87,5 @@
     .blog-post-image-container{
         height: 400px;
     }
+    
 }
